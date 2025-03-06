@@ -1,0 +1,5 @@
+ADD Circle 0 0 5 RED 05.03.2025
+ADD Rectangle 1.0 1.0 2.0 2.0 BLUE 05.03.2025
+ADD Triangle 0.0 0.0 1.0 0.0 0.5 1.0 GREEN 05.03.2025
+REM green
+PRINT
