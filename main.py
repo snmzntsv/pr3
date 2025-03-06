@@ -1,6 +1,7 @@
 # Импорт необходимых модулей
 from enum import Enum  # Импорт модуля Enum для создания перечислимых типов
 
+
 # Определение перечислимого типа для цвета
 class Color(Enum):
     # Перечисление цветов с присвоением им числовых значений
@@ -41,7 +42,10 @@ class Circle(Figure):
     def print(self):
         # Вывод информации о круге на экран
         print(
-            f"Круг: ({self.centerX}, {self.centerY}), радиус = {self.radius}, цвет = {self.color.name}, дата редактирования = {self.lastEditDate}")
+            f"Круг: ({self.centerX}, {self.centerY}), "
+            f"радиус = {self.radius}, "
+            f"цвет = {self.color.name}, "
+            f"дата редактирования = {self.lastEditDate}")
 
 
 # Класс для прямоугольника
@@ -60,7 +64,10 @@ class Rectangle(Figure):
     def print(self):
         # Вывод информации о прямоугольнике на экран
         print(
-            f"Прямоугольник: ({self.x1}, {self.y1}) - ({self.x2}, {self.y2}), цвет = {self.color.name}, дата редактирования = {self.lastEditDate}")
+            f"Прямоугольник: ({self.x1}, {self.y1}) - "
+            f"({self.x2}, {self.y2}), "
+            f"цвет = {self.color.name}, "
+            f"дата редактирования = {self.lastEditDate}")
 
 
 # Класс для треугольника
@@ -81,7 +88,10 @@ class Triangle(Figure):
     def print(self):
         # Вывод информации о треугольнике на экран
         print(
-            f"Треугольник: ({self.x1}, {self.y1}) ({self.x2}, {self.y2}) ({self.x3}, {self.y3}), цвет = {self.color.name}, дата редактирования = {self.lastEditDate}")
+            f"Треугольник: ({self.x1}, {self.y1}) ({self.x2}, {self.y2}) "
+            f"({self.x3}, {self.y3}), "
+            f"цвет = {self.color.name}, "
+            f"дата редактирования = {self.lastEditDate}")
 
 
 # Контейнер для хранения фигур
@@ -183,4 +193,3 @@ def readFile(filename):
 if __name__ == "__main__":
     # Вызов функции для чтения файла и обработки команд
     readFile("commands.txt")
-
